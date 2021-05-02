@@ -1,1 +1,1 @@
-output "records" { value = digitalocean_record.record.* }
+output "records" { value = toset(digitalocean_record.record.*) }
